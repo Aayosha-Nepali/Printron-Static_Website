@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Head Part -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Printron</title>
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <style>
+      body {
+        width: 100%;
+        background-color: #9aa0a3;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- LOGO -->
+      <a href="/" aria-label="Printron" class="logo">
+        <img src="/imgs/printron.png" alt="Printron" width="50" height="40" />
+        <span style="font-size: 20px; font-family: monospace">Printron</span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="navbar">
+        <ul class="navbar-list" style="list-style: none">
+          <li>
+            <a class="active" href="/">Home</a>
+          </li>
+          <li>
+            <a href="/products.html">Products</a>
+          </li>
+          <li>
+            <a href="/blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="/research.html">Research</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+          <li>
+            <a><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <h1>Summer Sale</h1>
+      <p class="text">
+        Enjoy the encounter of colour and light in the warmest time of the year
+        and save upto 70% discount.
+      </p>
+      <br />
+      <br />
+
+      <a href="/products.html" class="btn" style="text-decoration: none">
+        Buy Now
+      </a>
+    </section>
+    <!-- End of Hero Section -->
+
+    <!-- Top Products -->
+    <section class="top-products">
+      <div
+        class="top-products-header"
+        style="text-align: center; color: #121212"
+      >
+        <h2 style="margin-bottom: 20px">Featured Products</h2>
+        <p>
+          Discover our standout products designed to enhance your printing
+          experience.
+        </p>
+      </div>
+      <!-- Top Products -->
+      <div class="products-wrapper">
+        <div class="product">
+          <!-- Product Image -->
+          <a href="/products/product-detail.html">
+            <img src="/imgs/product/product-1.png" alt="Product 1" />
+          </a>
+
+          <div class="product-description">
+            <!-- Product Title -->
+            <span class="title">
+              HP LaserJet 107a Single Function Affordable Mono Printer - Upto 20
+              PPM - White
+            </span>
+
+            <!-- Product Rating -->
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+
+            <!-- Product Price -->
+            <div class="price">
+              <del>Rs.26000</del>
+              <span class="price">Rs.20000</span>
+            </div>
+
+            <button class="add-to-cart-button" data-product-id="1">
+              Add to cart <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <!-- Product Image -->
+          <a href="/products/product-detail.html">
+            <img src="/imgs/product/product-2.png" alt="Product 2" />
+          </a>
+
+          <div class="product-description">
+            <!-- Product Title -->
+            <span class="title">
+              ZK Teco Black Thermal Receipt Printer ZKP8005 - Mono Laser
+              Multi-Function Automatic
+            </span>
+
+            <!-- Product Rating -->
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+
+            <!-- Product Price -->
+            <div class="price">
+              <del>Rs.15000</del>
+              <span class="price">Rs.12000</span>
+            </div>
+
+            <button class="add-to-cart-button" data-product-id="2">
+              Add to cart <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <!-- Product Image -->
+          <a href="/products/product-detail.html">
+            <img src="/imgs/product/product-3.png" alt="Product 3" />
+          </a>
+
+          <div class="product-description">
+            <!-- Product Title -->
+            <span class="title">
+              Brother DCP-L2540DW 3-in-1 Mono Laser Multi-Function Automatic
+              Duplex Wireless Printer
+            </span>
+
+            <!-- Product Rating -->
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+
+            <!-- Product Price -->
+            <div class="price">
+              <del>Rs.50000</del>
+              <span class="price">Rs.40000</span>
+            </div>
+
+            <button class="add-to-cart-button" data-product-id="3">
+              Add to cart <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Top Products -->
+
+    <hr />
+    <!-- Footer -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="section introduction">
+          <!-- LOGO -->
+          <a href="/" aria-label="Printron" class="logo">
+            <img
+              src="/imgs/printron.png"
+              alt="Printron"
+              width="50"
+              height="40"
+            />
+            <span style="font-size: 20px; font-family: monospace">
+              Printron
+            </span>
+          </a>
+          <p>
+            Introducing Printron, a company founded on the visionary idea of
+            it's creator. Originating from Islington College, Nepal, Printron
+            was established by Aayosha Nepali. Committed to excellence,
+            Printron stands as a testament to innovation and quality in the
+            field of printing solutions.
+          </p>
+        </div>
+        <div class="section partners">
+          <h3 class="title" style="text-align: center">Partners</h3>
+          <div class="partner-logos">
+            <img
+              src="https://global.canon/en/corporate/logo/img/logo_01.png"
+              alt="Canon"
+              width="100"
+            />
+            <img
+              src="https://www.pchouse.com.bd/image/cache/catalog/Brand%20Logo/EPSON-600x315w.png.webp"
+              alt="EPSON"
+              width="100"
+            />
+            <img
+              src="https://bbdnitm.ac.in/wp-content/uploads/2021/11/panasonic-logo.png"
+              alt="Panasonic"
+              width="120"
+            />
+            <br />
+            <img
+              src="https://bbdnitm.ac.in/wp-content/uploads/2021/11/panasonic-logo.png"
+              alt="Panasonic"
+              width="120"
+            />
+            <img
+              src="https://global.canon/en/corporate/logo/img/logo_01.png"
+              alt="Canon"
+              width="100"
+            />
+            <img
+              src="https://www.pchouse.com.bd/image/cache/catalog/Brand%20Logo/EPSON-600x315w.png.webp"
+              alt="EPSON"
+              width="100"
+            />
+          </div>
+        </div>
+        <div class="section contacts" style="text-align: right">
+          <h3 class="title">Contacts</h3>
+
+          <div>
+            <a href="mailto:mail@printron.com"> mail@printron.com</a>
+            <br /><br />
+            <a href="tel:980 0000 000">980 0000 000</a>
+            <br /><br />
+            <p>Kathmandu - 26, Nepal</p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <p style="text-align: center">Copyright &copy; 2024, Printron</p>
+    </footer>
+    <!-- End of Footer -->
+
+    <script>
+      // Function for handling add-to-cart
+      function showAlert(event) {
+        const button = event.target.closest("button");
+        const productId = button.getAttribute("data-product-id");
+        alert(`Item ${productId} added to cart!`);
+      }
+
+      // Event handlers for Add-To-Cart
+      document.querySelectorAll(".add-to-cart-button").forEach((button) => {
+        button.addEventListener("click", showAlert);
+      });
+    </script>
+  </body>
+</html>

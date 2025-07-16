@@ -1,0 +1,78 @@
+/* Breadcrumb : Navigation for hierarchy */
+.breadcrumb {
+  padding: 2rem 0;
+  text-align: center;
+  color: #121212;
+}
+
+.breadcrumb ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.breadcrumb ul a {
+  color: #121212;
+  text-decoration: none;
+}
+.breadcrumb ul a:hover {
+  text-decoration: underline;
+}
+/* End of Breadcrumb */
+
+#comparison {
+  max-width: 1200px;
+  margin: 50px auto;
+  color: #121212;
+}
+
+.comparison-section {
+  margin: 40px 0;
+}
+
+.comparison-item {
+  margin: 20px 0;
+  display: flex;
+  gap: 30px;
+}
+
+.comparison-item {
+  margin-bottom: 20px;
+}
+
+.comparison-item img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  padding: 5px;
+  background: #fff;
+}
+
+#references {
+  max-width: 1200px;
+  margin: 50px auto;
+  color: #121212;
+}
+
+#references ul {
+  list-style-type: georgian;
+  padding: 0;
+  margin-left: 30px;
+}
+
+#references li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+a {
+  color: #121212;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

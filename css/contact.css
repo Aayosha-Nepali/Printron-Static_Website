@@ -1,0 +1,141 @@
+/* Breadcrumb : Navigation for hierarchy */
+.breadcrumb {
+  padding: 2rem 0;
+  text-align: center;
+  color: #121212;
+}
+
+.breadcrumb ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.breadcrumb ul a {
+  color: #121212;
+  text-decoration: none;
+}
+.breadcrumb ul a:hover {
+  text-decoration: underline;
+}
+/* End of Breadcrumb */
+
+/* Contact us */
+.contact-us {
+  padding: 30px 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-us .header {
+  max-width: 600px;
+  margin: auto;
+  color: #121212;
+}
+
+.contact-us .header h2 {
+  font-size: 28px;
+}
+
+/* Contact Form */
+#contact-form {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.form-group {
+  margin: 15px 0;
+}
+
+.form-group label {
+  display: block;
+  color: #121212;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 12px;
+  margin-top: 8px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+.form-group button {
+  width: 100%;
+  background-color: burlywood;
+  color: #121212;
+  padding: 14px 80px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.form-group .error {
+  color: red;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* End of Contact Us */
+
+/* Our Team */
+
+.our-team {
+  padding: 50px 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our-team .card {
+  float: left;
+  width: calc(33.3% - 20px);
+  margin-bottom: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background: white;
+  margin: 10px;
+}
+
+.card-content {
+  margin: 10px 0;
+}
+
+.our-team .title {
+  margin: 10px 0;
+}
+
+.our-team button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.our-team img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* End of Our Tema */

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Head Part -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Printron</title>
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      body {
+        width: 100%;
+        background-color: #9aa0a3;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- LOGO -->
+      <a href="/" aria-label="Printron" class="logo">
+        <img src="/imgs/printron.png" alt="Printron" width="50" height="40" />
+        <span style="font-size: 20px; font-family: monospace">Printron</span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="navbar">
+        <ul class="navbar-list" style="list-style: none">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/products.html">Products</a>
+          </li>
+          <li>
+            <a href="/blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="/research.html">Research</a>
+          </li>
+          <li>
+            <a class="active" href="/contact.html">Contact</a>
+          </li>
+          <li>
+            <a><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li>/</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <!-- End of Breadcrumb -->
+
+    <!-- Contact Form -->
+    <section class="contact-us">
+      <div class="products-header" style="text-align: center; color: #121212">
+        <h2 style="margin-bottom: 20px">Contact Us</h2>
+        <p>Have questions or comments?</p>
+      </div>
+
+      <form method="post" id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="input-field"
+            id="name"
+            name="name"
+            placeholder="John Smith"
+          />
+          <div class="error" id="name-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="input-field"
+            id="email"
+            name="email"
+            placeholder="contact@johnsmith.com"
+          />
+          <div class="error" id="email-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="phone-number">Phone Number</label>
+          <input
+            type="number"
+            class="input-field"
+            id="phone-number"
+            name="phone-number"
+            placeholder="+977 9800000000"
+          />
+          <div class="error" id="phone-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select name="subject" id="subject">
+            <option value="Inquiry Regarding Pricing">Pricing</option>
+            <option value="Inquiry Regarding Quality">Quality</option>
+            <option value="General Questions">General Questions</option>
+          </select>
+          <div class="error" id="subject-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            class="input-field"
+            rows="8"
+            id="message"
+            name="message"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default btn-lg btn-block">
+            Send message
+          </button>
+        </div>
+      </form>
+      <script>
+        const $contactForm = document.getElementById("contact-form");
+
+        // Event Listener for Form Submit
+        $contactForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          document
+            .querySelectorAll(".error")
+            .forEach((element) => (element.innerHTML = ""));
+
+          // Set Default Validation to False
+          let validation = true;
+
+          // Name Validation
+          const name = document.getElementById("name");
+          if (name.value.trim() === "") {
+            document.getElementById("name-error").textContent =
+              "Name is required.";
+            validation = false;
+          }
+
+          // Email Validation
+          const email = document.getElementById("email");
+          if (email.value.trim() === "") {
+            document.getElementById("email-error").textContent =
+              "Email is required.";
+            validation = false;
+          } else if (!email.value.includes("@")) {
+            document.getElementById("email-error").textContent =
+              "Please enter a valid number.";
+            validation = false;
+          }
+
+          // Phone Number Validation
+          const phoneNumber = document.getElementById("phone-number");
+          if (phoneNumber.value.trim() === "") {
+            document.getElementById("phone-error").textContent =
+              "Phone number is required.";
+            validation = false;
+          } else if (phoneNumber.value.length < 10) {
+            document.getElementById("phone-error").textContent =
+              "Please enter a valid number.";
+            validation = false;
+          }
+
+          if (validation === true) {
+            document
+              .querySelectorAll(".error")
+              .forEach((element) => (element.innerHTML = ""));
+            console.log("Form Submitted successfully");
+            alert("Form Submitted successfully");
+          }
+        });
+      </script>
+    </section>
+    <!-- End of Contact Form -->
+
+    <!-- Our Team -->
+    <section class="our-team">
+      <div class="products-header" style="text-align: center; color: #121212">
+        <h2 style="margin-bottom: 20px">Our Team</h2>
+        <p>Meet our professional team.</p>
+      </div>
+      <div class="row" style="margin-top: 30px">
+        <div class="card">
+          <img src="https://www.w3schools.com/w3images/team1.jpg" alt="John" />
+          <div class="card-content">
+            <h2>Aayosha</h2>
+            <p class="title">Designer</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" />
+          <div class="card-content">
+            <h2>John Doe</h2>
+            <p class="title">Designer</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://www.w3schools.com/w3images/team3.jpg" alt="John" />
+          <div class="card-content">
+            <h2>Charles Ray</h2>
+            <p class="title">Designer</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Footer -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="section introduction">
+          <!-- LOGO -->
+          <a href="/" aria-label="Printron" class="logo">
+            <img
+              src="/imgs/printron.png"
+              alt="Printron"
+              width="50"
+              height="40"
+            />
+            <span style="font-size: 20px; font-family: monospace">
+              Printron
+            </span>
+          </a>
+          <p>
+            Introducing Printron, a company founded on the visionary idea of
+            it's creator. Originating from Islington College, Nepal, Printron
+            was established by Aayosha Nepali. Committed to excellence,
+            Printron stands as a testament to innovation and quality in the
+            field of printing solutions.
+          </p>
+        </div>
+        <div class="section partners">
+          <h3 class="title" style="text-align: center">Partners</h3>
+          <div class="partner-logos">
+            <img
+              src="https://global.canon/en/corporate/logo/img/logo_01.png"
+              alt="Canon"
+              width="100"
+            />
+            <img
+              src="https://www.pchouse.com.bd/image/cache/catalog/Brand%20Logo/EPSON-600x315w.png.webp"
+              alt="EPSON"
+              width="100"
+            />
+            <img
+              src="https://bbdnitm.ac.in/wp-content/uploads/2021/11/panasonic-logo.png"
+              alt="Panasonic"
+              width="120"
+            />
+            <br />
+            <img
+              src="https://bbdnitm.ac.in/wp-content/uploads/2021/11/panasonic-logo.png"
+              alt="Panasonic"
+              width="120"
+            />
+            <img
+              src="https://global.canon/en/corporate/logo/img/logo_01.png"
+              alt="Canon"
+              width="100"
+            />
+            <img
+              src="https://www.pchouse.com.bd/image/cache/catalog/Brand%20Logo/EPSON-600x315w.png.webp"
+              alt="EPSON"
+              width="100"
+            />
+          </div>
+        </div>
+        <div class="section contacts" style="text-align: right">
+          <h3 class="title">Contacts</h3>
+
+          <div>
+            <a href="mailto:mail@printron.com"> mail@printron.com</a>
+            <br /><br />
+            <a href="tel:980 0000 000">980 0000 000</a>
+            <br /><br />
+            <p>Kathmandu - 26, Nepal</p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <p style="text-align: center">Copyright &copy; 2024, Printron</p>
+    </footer>
+    <!-- End of Footer -->
+  </body>
+</html>

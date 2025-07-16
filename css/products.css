@@ -1,0 +1,121 @@
+/* Breadcrumb : Navigation for hierarchy */
+.breadcrumb {
+  padding: 2rem 0;
+  text-align: center;
+  color: #121212;
+}
+
+.breadcrumb ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.breadcrumb ul a {
+  color: #121212;
+  text-decoration: none;
+}
+.breadcrumb ul a:hover {
+  text-decoration: underline;
+}
+/* End of Breadcrumb */
+
+/*  Products */
+.products {
+  padding: 30px 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products-header {
+  max-width: 600px;
+  margin: auto;
+}
+
+.products-header h2 {
+  font-size: 28px;
+}
+
+.products-wrapper {
+  margin: 60px 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.products-wrapper .product {
+  flex: 0 0 32%;
+  max-width: 32%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.products-wrapper .product:hover {
+  box-shadow: 10px 10px 20px rgba(107, 111, 59, 0.378);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product .product-description {
+  padding: 20px;
+  text-align: center;
+}
+
+.product .product-description .title {
+  font-size: 14px;
+}
+
+.product .product-description .star {
+  margin: 15px 0;
+}
+
+.product .product-description .star i {
+  color: rgb(243, 181, 25);
+}
+
+.product .product-description del {
+  opacity: 0.5;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.product .product-description .price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.product .product-description button {
+  margin-top: 15px;
+  background-color: burlywood;
+  color: #121212;
+  padding: 14px 80px;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+}
+/* End of Products */
+
+/* Products SEO Content */
+.products-content {
+  max-width: 992px;
+  margin: auto;
+  margin: 50px auto;
+  color: #121212;
+}
+
+.products-content p {
+  margin: 10px 0;
+}
+
+/* End of Products SEO Content */
